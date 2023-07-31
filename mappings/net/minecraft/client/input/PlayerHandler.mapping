@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_41 net/minecraft/client/input/PlayerHandler
+	FIELD field_2532 forwardInput F
+	FIELD field_2533 strafeInput F
+	FIELD field_2534 jumpInput Z
+	FIELD field_2535 sneakInput Z
+	FIELD field_2536 unusedInputFlag Z
+	METHOD method_1940 resetInputFlags ()V
+	METHOD method_1941 setInputFlag (IZ)V
+		ARG 1 inputId
+		ARG 2 isActive
+	METHOD method_1942 handleInput (Lnet/minecraft/class_54;)V
+		ARG 1 player

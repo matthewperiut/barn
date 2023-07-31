@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_388 net/minecraft/particle/client/Particle
+	FIELD field_1486 posX D
+	FIELD field_1487 posY D
+	FIELD field_1488 prevPosX D
+	FIELD field_1489 prevPosY D
+	FIELD field_1490 velocityX D
+	FIELD field_1491 velocityY D
+	FIELD field_1492 acceleration D
+	FIELD field_1493 isDead Z
+	FIELD field_1494 age I
+	FIELD field_1495 maxAge I
+	FIELD field_1496 initialPosX D
+	FIELD field_1497 initialPosY D
+	FIELD field_1498 initialPrevPosX D
+	FIELD field_1499 initialPrevPosY D
+	FIELD field_1500 initialVelocityX D
+	FIELD field_1501 initialVelocityY D
+	FIELD field_1502 initialAcceleration D
+	FIELD field_1503 fadeFactor D
+	FIELD field_1504 random Ljava/util/Random;
+	METHOD method_1237 saveInitialStates ()V
+	METHOD method_1238 updateParticle (Lnet/minecraft/class_35;)V
+		ARG 1 renderer
+	METHOD method_1239 markDead ()V

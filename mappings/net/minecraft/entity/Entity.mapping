@@ -17,7 +17,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
 	FIELD field_1614 air I
 	FIELD field_1615 fireImmune Z
+	FIELD field_1623 onGround Z
 	FIELD field_1630 dead Z
+	FIELD field_1631 setHeightOffset F
 	FIELD field_1632 spacingXZ F
 	FIELD field_1633 spacingY F
 	FIELD field_1644 random Ljava/util/Random;
@@ -27,6 +29,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1653 capeUrl Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 world
+	METHOD method_1310 initDataTracker ()V
 	METHOD method_1316 updateCapeUrl ()V
 	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
@@ -34,11 +37,13 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 spacingXZ
 		ARG 2 spacingY
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
+	METHOD method_1340 setPosition (DDD)V
 	METHOD method_1346 write (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1348 read (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
+	METHOD method_1358 isTouchingWaterOrRain ()Z
 	METHOD method_1363 readtNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V

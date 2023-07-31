@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_15 net/minecraft/block/Material
+CLASS net/minecraft/class_15 net/minecraft/block/material/Material
 	FIELD field_1001 CLAY Lnet/minecraft/class_15;
 	FIELD field_1002 PUMPKIN Lnet/minecraft/class_15;
 	FIELD field_1003 NETHER_PORTAL Lnet/minecraft/class_15;
@@ -6,6 +6,8 @@ CLASS net/minecraft/class_15 net/minecraft/block/Material
 	FIELD field_971 COBWEB Lnet/minecraft/class_15;
 	FIELD field_974 burnable Z
 	FIELD field_975 replaceable Z
+	FIELD field_977 requiresTool Z
+	FIELD field_978 noPushing I
 	FIELD field_979 AIR Lnet/minecraft/class_15;
 	FIELD field_980 SOLID_ORGANIC Lnet/minecraft/class_15;
 	FIELD field_981 SOIL Lnet/minecraft/class_15;
@@ -21,4 +23,8 @@ CLASS net/minecraft/class_15 net/minecraft/block/Material
 	FIELD field_992 SAND Lnet/minecraft/class_15;
 	FIELD field_995 TNT Lnet/minecraft/class_15;
 	METHOD method_894 isBurnable ()Z
+	METHOD method_898 requiresTool ()Z
+	METHOD method_899 getNoPushing ()I
+	METHOD method_900 setNoPushing ()Lnet/minecraft/class_15;
+	METHOD method_901 setNotSolid ()Lnet/minecraft/class_15;
 	METHOD method_904 setBurnable ()Lnet/minecraft/class_15;

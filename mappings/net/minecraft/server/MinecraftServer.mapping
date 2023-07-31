@@ -1,2 +1,15 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD field_2837 LOGGER Ljava/util/logging/Logger;
+	FIELD field_2838 MAP Ljava/util/HashMap;
+	FIELD field_2839 NETWORK_HANDLER Lnet/minecraft/class_9;
+	FIELD field_2840 SERVER_PROPERETIES Lnet/minecraft/class_391;
+	FIELD field_2841 WORLDS [Lnet/minecraft/class_73;
+	FIELD field_2842 PLAYER_MANAGER Lnet/minecraft/class_166;
+	FIELD field_2843 SHUTDOWN Z
+	FIELD field_2844 TICK_COUNT I
+	FIELD field_2845 LOADING_MESSAGE Ljava/lang/String;
+	FIELD field_2846 LOADING_PROGRESS I
 	FIELD field_2848 onlineMode Z
+	FIELD field_2853 RUNNING Z
+	FIELD field_2854 PLAYER_LIST Ljava/util/List;
+	FIELD field_2855 SAFE_PLAYER_LIST Ljava/util/List;

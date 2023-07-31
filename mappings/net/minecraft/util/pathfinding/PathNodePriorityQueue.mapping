@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_109 net/minecraft/util/pathfinding/PathNodePriorityQueue
+	FIELD field_931 queue [Lnet/minecraft/class_29;
+	FIELD field_932 queueSize I
+	METHOD method_841 clear ()V
+	METHOD method_842 sortUp (I)V
+		ARG 1 index
+	METHOD method_843 add (Lnet/minecraft/class_29;)Lnet/minecraft/class_29;
+		ARG 1 node
+	METHOD method_844 update (Lnet/minecraft/class_29;F)V
+		ARG 1 node
+		ARG 2 cost
+	METHOD method_845 pop ()Lnet/minecraft/class_29;
+	METHOD method_846 sortDown (I)V
+		ARG 1 index
+	METHOD method_847 isEmpty ()Z

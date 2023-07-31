@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_174 net/minecraft/server/EntityTrackerEntry
+	FIELD field_597 trackedEntity Lnet/minecraft/class_57;
+	FIELD field_598 maxDistanceThreshold I
+	FIELD field_599 updateInterval I
+	FIELD field_600 lastX I
+	FIELD field_601 lastY I
+	FIELD field_602 lastZ I
+	FIELD field_603 lastYaw I
+	FIELD field_604 lastPitch I
+	FIELD field_605 lastVelocityX D
+	FIELD field_606 lastVelocityY D
+	FIELD field_607 lastVelocityZ D
+	FIELD field_608 updateCounter I
+	FIELD field_609 isMoving Z
+	FIELD field_610 trackedPlayers Ljava/util/Set;
+	FIELD field_611 prevPosX D
+	FIELD field_612 prevPosY D
+	FIELD field_613 prevPosZ D
+	FIELD field_614 firstUpdate Z
+	FIELD field_615 sendsVelocityUpdates Z
+	FIELD field_616 ticksSinceLastForcedTeleport I
+	METHOD <init> (Lnet/minecraft/class_57;IIZ)V
+		ARG 1 entity
+		ARG 2 maxDistance
+		ARG 3 updateInterval
+		ARG 4 sendsVelocityUpdates
+	METHOD method_599 updateTrackedPlayers (Ljava/util/List;)V

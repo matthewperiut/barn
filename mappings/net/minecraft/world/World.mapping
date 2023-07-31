@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_180 isRemote Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
+	FIELD field_217 observers Ljava/util/List;
+	FIELD field_218 chunkLoader Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
 	FIELD field_222 persistentStateManager Lnet/minecraft/class_53;
@@ -20,37 +22,52 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 dimension
 		ARG 4 seed
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
+	METHOD method_154 setBlockWithMetadata (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+		ARG 5 metadata
 	METHOD method_159 setTime (J)V
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_176 getOrCreateState (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
-		ARG 1 stateClass
-		ARG 2 id
 	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_176 getOrCreateState (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 stateClass
+		ARG 2 id
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
-	METHOD method_200 (IIII)Z
+	METHOD method_199 getChunkFromBlockCoords (II)Lnet/minecraft/class_43;
+		ARG 1 blockX
+		ARG 2 blockZ
+	METHOD method_200 setBlockId (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
-	METHOD method_201 (IIIII)Z
+	METHOD method_201 setBlockAndUpdate (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 blockId
+		ARG 5 metadata
 	METHOD method_208 getIdCount (Ljava/lang/String;)I
 		ARG 1 id
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
-	METHOD method_215 (IIII)V
+	METHOD method_214 getChunk (II)Lnet/minecraft/class_43;
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_215 handleBlockMetadataChange (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 metadata
 	METHOD method_217 getChunkData (IIIIII)[B
 		ARG 1 x
 		ARG 2 y
@@ -58,7 +75,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
-	METHOD method_223 (IIII)Z
+	METHOD method_223 updateBlockMetadata (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -67,14 +84,18 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
-	METHOD method_235 (IIII)V
+	METHOD method_235 notifyBlockChange (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_243 (III)V
+	METHOD method_238 canLoadChunk (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_243 notifyObserversOfBlockChange (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_244 markBlockForRenderUpdate (IIII)V
 	METHOD method_253 (IIII)V
 		ARG 1 x
 		ARG 2 t

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_12 net/minecraft/ClientPhysicsProcessor
+	FIELD field_38 positionDelta F
+	FIELD field_39 previousPositionDelta F
+	FIELD field_40 smoothedPositionDelta F
+	METHOD method_40 calculatePositionDelta (FF)F
+		ARG 1 positionChange
+		ARG 2 smoothingFactor

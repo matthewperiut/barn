@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_29 net/minecraft/util/pathfinding/PathNode
+	FIELD field_140 x I
+	FIELD field_141 y I
+	FIELD field_142 z I
+	FIELD field_143 listStatus I
+	FIELD field_144 costFromStart F
+	FIELD field_145 heuristicCostToGoal F
+	FIELD field_146 totalCost F
+	FIELD field_147 parentNode Lnet/minecraft/class_29;
+	FIELD field_148 visited Z
+	FIELD field_149 hash I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_112 isInList ()Z
+	METHOD method_113 calculateHash (III)I
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD method_114 calculateHeuristic (Lnet/minecraft/class_29;)F
+		ARG 1 goal

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_289 net/minecraft/world/feature/ClayFeature
+	FIELD field_1144 blockId I
+	FIELD field_1145 featureSize I
+	METHOD <init> (I)V
+		ARG 1 featureSize

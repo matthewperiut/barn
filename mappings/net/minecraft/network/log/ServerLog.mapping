@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_39 net/minecraft/network/log/ServerLog
+	METHOD method_1409 logMessage (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD method_1410 getLogMessage ()Ljava/lang/String;

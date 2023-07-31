@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9
+CLASS net/minecraft/class_9 net/minecraft/server/network/ServerSocketNetworkHandler
 	FIELD field_28 LOGGER Ljava/util/logging/Logger;
 	FIELD field_30 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_31 socket Ljava/net/ServerSocket;

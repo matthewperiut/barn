@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_413 net/minecraft/client/input/KeyboardPlayerHandler
+	FIELD field_1661 keyStateFlags [Z
+	FIELD field_1662 gameOptions Lnet/minecraft/class_322;
+	METHOD <init> (Lnet/minecraft/class_322;)V
+		ARG 1 gameOptions

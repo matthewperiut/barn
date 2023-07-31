@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_43 net/minecraft/world/Chunk
+	METHOD method_861 setBlockAndMetadata (IIIII)Z
